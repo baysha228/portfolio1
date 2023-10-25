@@ -1,0 +1,76 @@
+ h1{
+    text-align: center;
+    background-color: rgb(24, 138, 238);
+  
+  
+  }
+img{width: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font family: veranda,geneva,tahoma;
+  background-color:aqua ;
+  }
+img{ height: 400px;}
+nav{
+  background-color: darksalmon;
+  font-size: 28px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: darkslateblue;
+}
+nav li{
+  display: inline-block;
+  margin: 0 8px;
+
+}
+nav a{
+  text-decoration: none;color:  ;
+}
+.logo{
+  font-size: 36px;
+  font-weight: bolder;
+}
+  nav a:hover{
+    color: whitesmoke;
+  }
+.menu-line{
+  height: 3px;
+  width: 20px;
+  background-color: darkslateblue;
+  margin-bottom: 3px;
+}
+.menu{
+  cursor: pointer;
+  display: none;
+}
+@media all and (max-width:640px){
+  nav{
+    flex-direction: column;
+  }
+  nav li{
+    display: block;
+    padding: 10px 0;
+  }
+  ul{
+    text-align: center;
+    padding: 0;
+    display: none;
+  }
+  .logo{
+    align-self: flex-start;
+    margin: 10px 0px 0px 30px;
+  }
+  .menu{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+  }
+}
+.showmenu{
+  display: block;
+}
